@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>English Podcast Channel</title>
-    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/scss/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,500&display=swap" rel="stylesheet">
 </head>
 <body id="container">
-    <header>
-        <div id="logo-channel">
-            <img src="./assets/images/logo.png" alt="" width="70">
-            <h1>English Podcast Channel</h1>
-        </div>
+    <header class="header">
         <div id="elements-header">
-            <ul>
-                <li>Episodios</li>
-                <li>Nosotros</li>
-                <li>Entrevistas</li>
-                <li>Tópicos</li>
+            <img src="./assets/images/logo.svg" alt="" width="24px" height="24px" class="m-elements-header">
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon m-elements-header" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nuestros servicios</a></li>
+                <li><a href="#">Casos de éxito</a></li>
+                <li><a href="#">Contactenos</a></li>
             </ul>
         </div>
     </header>
