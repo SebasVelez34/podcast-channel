@@ -3,33 +3,41 @@
     background: white;
     display: flex;
     flex-direction: column;
-
+    margin: 8% 5%;
 }
 #welcome .title{
-    font-family: 'Pacifico', cursive;
-    font-size: 2rem;
-    color: #060A24;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 36px;
+    color: #000;
     letter-spacing: 0;
+    line-height: 42px;
+    font-weight: 400;
 }
 #welcome .title h2{
     margin: 0;
 }
 #welcome .subtitle{
-    font-family: 'Raleway', sans-serif;
-    font-style: italic;
     word-wrap: break-word;
-    width: 40%;
+    width: 100%;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: 6% 0 12%;
 }
-.learn-more{
-    margin-top: 4%;
+.learn-more {
+    background: #00F3BB;
+    padding: 4%;
+    text-align: center;
 }
 .learn-more a {
-    background: #00F3BB 100%;
-    text-decoration: none;
-    padding: 1% 4.1%;
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 18px;
     color: #060A24;
     letter-spacing: 0;
     text-align: center;
     line-height: 24px;
+    text-decoration: none;
+    font-weight: 500;
 }
