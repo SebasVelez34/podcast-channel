@@ -1,6 +1,6 @@
 
 #podcast{
-    height: 1042px;
+    height: 1260px;
     display: flex;
     position: relative;
     #container-podcast{
@@ -22,7 +22,7 @@
         #podcasts{
             margin: 0 3.4% 0%;
             iframe{
-                margin-bottom: 2%;
+                margin-bottom: 1%;
             }
         }
     }
@@ -30,7 +30,7 @@
 
 .header__bg {
     position: absolute;
-    top: 4%;
+    top: 0;
     bottom: 0;
     right: 0;
     left: 0;

@@ -4,16 +4,18 @@
     display: flex;
     flex-direction: column;
     margin: 8% 5%;
+    margin-bottom: 20%;
 }
-#welcome .title{
+#welcome .title h1{
     font-family: 'IBM Plex Mono', monospace;
     font-size: 36px;
     color: #000;
     letter-spacing: 0;
     line-height: 42px;
     font-weight: 400;
+    white-space: pre-line;
 }
-#welcome .title h2{
+#welcome .title h1{
     margin: 0;
 }
 #welcome .subtitle{

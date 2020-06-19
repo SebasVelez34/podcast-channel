@@ -151,18 +151,20 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 8% 5%;
+  margin-bottom: 20%;
 }
 
-#welcome .title {
+#welcome .title h1 {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 36px;
   color: #000;
   letter-spacing: 0;
   line-height: 42px;
   font-weight: 400;
+  white-space: pre-line;
 }
 
-#welcome .title h2 {
+#welcome .title h1 {
   margin: 0;
 }
 
@@ -198,7 +200,7 @@
 # Podcast Section
 --------------------------------------------------------------*/
 #podcast {
-  height: 1042px;
+  height: 1260px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,12 +238,12 @@
 }
 
 #podcast #container-podcast #podcasts iframe {
-  margin-bottom: 2%;
+  margin-bottom: 1%;
 }
 
 .header__bg {
   position: absolute;
-  top: 4%;
+  top: 0;
   bottom: 0;
   right: 0;
   left: 0;
@@ -252,6 +254,48 @@
           transform: skewY(-6deg);
   -webkit-transform-origin: top left;
           transform-origin: top left;
+}
+
+/*--------------------------------------------------------------
+# Us Section
+--------------------------------------------------------------*/
+#us {
+  position: relative;
+}
+
+#us .img figure {
+  margin-top: -8rem;
+}
+
+#us .img figure img {
+  width: 100%;
+}
+
+#us .title {
+  margin: 5%;
+}
+
+#us .title h2 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 36px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 42px;
+  font-weight: 400;
+  white-space: pre-line;
+}
+
+#us .text {
+  margin: 5%;
+}
+
+#us .text p {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 22px;
+  white-space: pre-line;
 }
 
 /*--------------------------------------------------------------
@@ -267,7 +311,7 @@
 #container {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header" "main" "footer";
   margin: 0;
 }
 
