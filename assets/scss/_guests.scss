@@ -1,0 +1,19 @@
+#guests{
+    .title{
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 36px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 42px;
+        font-weight: 400;
+        white-space: pre-line;
+        margin: 5%;
+    }
+    .images{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    img{
+        width: 100%;
+    }
+}

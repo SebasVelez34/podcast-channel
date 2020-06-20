@@ -1,0 +1,28 @@
+footer{
+    height: 140px;
+    padding: 8%;
+    margin-top: -2.3em;
+    background: white;
+    .title{
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 14px;
+        color: #060A24 100%;
+        letter-spacing: 0;
+        line-height: 22px;
+        text-align: center;
+        font-weight: 500;
+    }
+    .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+            margin: 8% 7% 5%;
+            font-size: 1.125em;
+            color: #060A24;
+            letter-spacing: 0;
+            line-height: 28px;
+            text-align: center;
+        }
+    }
+}
