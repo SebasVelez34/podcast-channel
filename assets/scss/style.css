@@ -28,12 +28,17 @@
 .header li a {
   display: block;
   padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
   text-decoration: none;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 28px;
 }
 
 .header li a:hover, .header .menu-btn:hover {
-  background-color: #f4f4f4;
+  background-color: #0000FF;
+  color: #fff;
 }
 
 .header .logo {
@@ -99,7 +104,7 @@
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: 265px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -132,6 +137,7 @@
     clear: none;
     float: right;
     max-height: none;
+    margin-right: 6%;
   }
   .header .menu-icon {
     display: none;
@@ -152,6 +158,10 @@
           flex-direction: column;
   margin: 8% 5%;
   margin-bottom: 20%;
+}
+
+#text-desktop {
+  display: none;
 }
 
 #welcome .title h1 {
@@ -222,6 +232,9 @@
 
 #podcast #container-podcast #podcasts iframe {
   margin-bottom: 1%;
+  border: 0;
+  width: 100%;
+  height: 232px;
 }
 
 .header__bg {
@@ -436,6 +449,181 @@ footer .icons i {
   text-align: center;
 }
 
+/*--------------------------------------------------------------
+# Media queries
+--------------------------------------------------------------*/
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+  .m-elements-header {
+    margin: 1.5% 0 2.5% 5%;
+  }
+  #container main {
+    overflow-y: hidden;
+  }
+  #welcome {
+    margin: 12% 14%;
+  }
+  #welcome .title h1 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 64px;
+    color: #060A24;
+    letter-spacing: 0;
+    white-space: normal;
+  }
+  #welcome .subtitle {
+    margin: 3% 0 6%;
+  }
+  #welcome .subtitle span {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 24px;
+    white-space: pre-line;
+  }
+  #welcome #text-desktop {
+    display: block;
+  }
+  #welcome #text-mobile {
+    display: none;
+  }
+  #welcome .learn-more {
+    padding: 1%;
+    width: 20%;
+  }
+  #welcome .point {
+    color: #0000EC;
+  }
+  #podcast {
+    height: 1042.6px;
+  }
+  #podcast .header__bg {
+    height: 85%;
+  }
+  #podcast #container-podcast #title {
+    margin: 3% 15%;
+    font-size: 48px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+  }
+  #podcast #container-podcast #podcasts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #podcast #container-podcast #podcasts iframe {
+    width: 45% !important;
+    margin-bottom: 5%;
+  }
+  #podcast #container-podcast #podcasts iframe:nth-child(odd) {
+    margin-right: 5%;
+  }
+  #us {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25% 35%;
+        grid-template-columns: 25% 35%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-gap: 4%;
+    margin-top: -13%;
+  }
+  #us .img {
+    margin-left: 10%;
+  }
+  #us .history .title h2 {
+    white-space: normal;
+    font-size: 48px;
+    color: #060A24;
+    letter-spacing: 0;
+  }
+  #guests .title {
+    margin: 3% 14% 2%;
+  }
+  #guests img {
+    width: 33%;
+  }
+  #other-topics {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #other-topics .title {
+    margin: 4% 14%;
+  }
+  #other-topics .topics {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #other-topics .topics .topic {
+    margin: 0 3%;
+  }
+  #other-topics .topics .topic .title-topic {
+    margin: 0;
+    white-space: pre-line;
+  }
+  #newness {
+    height: 518px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 0;
+  }
+  #newness .title {
+    font-size: 48px;
+    padding: 8% 14% 0;
+  }
+  #newness .learn-more {
+    padding: 1%;
+    width: 20%;
+  }
+  #newness .header__bg {
+    height: 125%;
+  }
+  footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 70% 25%;
+        grid-template-columns: 70% 25%;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    height: 70px;
+  }
+  footer .title {
+    text-align: left;
+    margin-left: 7%;
+  }
+}
+
+/*
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+*/
 /*--------------------------------------------------------------
 # App styles
 --------------------------------------------------------------*/

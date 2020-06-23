@@ -11,14 +11,14 @@
 <body id="container">
     <header class="header">
         <div id="elements-header">
-            <img src="./assets/images/logo.svg" alt="" width="24px" height="24px" class="m-elements-header">
+            <img src="./assets/images/logo.svg" alt="Logo de la página" class="m-elements-header">
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon m-elements-header" for="menu-btn"><span class="navicon"></span></label>
             <ul class="menu">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nuestros servicios</a></li>
-                <li><a href="#">Casos de éxito</a></li>
-                <li><a href="#">Contactenos</a></li>
+                <li><a href="#podcast">EPISODIOS</a></li>
+                <li><a href="#us">NOSOTROS</a></li>
+                <li><a href="#guests">ENTREVISTAS</a></li>
+                <li><a href="#other-topics">TÓPICOS</a></li>
             </ul>
         </div>
     </header>
@@ -26,10 +26,12 @@
         <section id="welcome">
             <div class="title">
                 <h1>Hello <s>world</s> 
-                    pale blue dot</h1>
+                    pale blue dot<span class="point">.</span></h1>
             </div>
             <div class="subtitle">
-                <span>Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</span>
+                <span id="text-mobile">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</span>
+                <span id="text-desktop">El portal de podcasts que explora el mundo de la programación y 
+                    la tecnología. Nuevos episodios, todos los jueves cada 15 días.</span>
             </div>
             <div class="learn-more">
                 <a href="">CONOCÉ MÁS</a>
@@ -38,29 +40,31 @@
         <section id="podcast" class="">
             <div class="header__bg"></div>  
             <div id="container-podcast">
-                <div id="title">Episodes</div>
+                <div id="title">Episodios</div>
                 <div id="podcasts">
-                    <iframe src="https://open.spotify.com/embed-podcast/episode/5z4cAiRTJ2oRb6FMNTP2YN" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    <iframe src="https://open.spotify.com/embed-podcast/episode/4l7gEY96DkdTBAMbpLdjWD" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    <iframe src="https://open.spotify.com/embed-podcast/episode/3KirmyISr7Pgj6UIU809Wc" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    <iframe src="https://open.spotify.com/embed-podcast/episode/4WG1bjfjnbwfXSNFMVL6to" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/5z4cAiRTJ2oRb6FMNTP2YN" allow="encrypted-media"></iframe>
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/4l7gEY96DkdTBAMbpLdjWD" allow="encrypted-media"></iframe>
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/3KirmyISr7Pgj6UIU809Wc" allow="encrypted-media"></iframe>
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/4WG1bjfjnbwfXSNFMVL6to" allow="encrypted-media"></iframe>
                 </div>
             </div>
         </section>
         <section id="us">
             <div class="img">
                 <figure>
-                    <img src="./assets/images/phone.png" alt="">
+                    <img src="./assets/images/phone.png" alt="The secret history of woman in coding">
                 </figure>
             </div>
-            <div class="title">
-                <h2>De dónde 
-                    venimos</h2>
-            </div>
-            <div class="text">
-                <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.
-                    
-                    Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+            <div class="history">
+                <div class="title">
+                    <h2>De dónde 
+                        venimos</h2>
+                </div>
+                <div class="text">
+                    <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.
+                        
+                        Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+                </div>
             </div>
         </section>
         <section id="guests">
@@ -69,8 +73,8 @@
                 <img src="./assets/images/grace-hopper.png" alt="grace-hopper">
                 <img src="./assets/images/Katie-Bouman.png" alt="Katie-Bouman">
                 <img src="./assets/images/Margaret_Hamilton.png" alt="Margaret_Hamilton">
-                <img src="./assets/images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="An E.R.A.Univac 1103 computer in the 1950s">
-                <img src="./assets/images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="Computer operators with an Eniac — the world’s first programmable general-purpose computer">
+                <img src="./assets/images/An-E.R.A.Univac-1103-computer-in-the-1950s.png" alt="An E.R.A.Univac 1103 computer in the 1950s">
+                <img src="./assets/images/Computer-operators-with-an-Eniac—the-world’s-first-programmable-general-purpose-computer.png" alt="Computer operators with an Eniac — the world’s first programmable general-purpose computer">
                 <img src="./assets/images/susan-kare.png" alt="susan-kare">
             </div>
         </section>
@@ -78,20 +82,22 @@
             <h2 class="title">Algunos de nuestros temas</h2>
             <div class="topics">
                 <div class="topic">
-                    <img src="./assets/images/icon1.svg" alt="">
+                    <img src="./assets/images/icon1.svg" alt="Trabajo remoto">
                     <h3 class="title-topic">Trabajo remoto</h3>
                 </div>
                 <div class="topic">
-                    <img src="./assets/images/icon2.svg" alt="">
-                    <h3 class="title-topic">Repensando la programación</h3>
+                    <img src="./assets/images/icon2.svg" alt="Repensando la programación">
+                    <h3 class="title-topic">Repensando la 
+                        programación</h3>
                 </div>
                 <div class="topic">
-                    <img src="./assets/images/icon3.svg" alt="">
+                    <img src="./assets/images/icon3.svg" alt="Bases del código">
                     <h3 class="title-topic">Bases del código</h3>
                 </div>
                 <div class="topic">
-                    <img src="./assets/images/icon4.svg" alt="">
-                    <h3 class="title-topic">Seguridad informática</h3>
+                    <img src="./assets/images/icon4.svg" alt="Seguridad informática">
+                    <h3 class="title-topic">Seguridad 
+                        informática</h3>
                 </div>
             </div>
         </section>

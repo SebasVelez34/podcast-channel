@@ -1,0 +1,157 @@
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    .m-elements-header{
+        margin: 1.5% 0 2.5% 5%;
+    }
+    #container main{
+        overflow-y: hidden;
+    }
+    #welcome {
+        margin: 12% 14%;
+        .title h1{
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 64px;
+            color: #060A24;
+            letter-spacing: 0;
+            white-space: normal;
+        }
+        .subtitle {
+            margin: 3% 0 6%;
+            span {
+                font-family: 'IBM Plex Mono', monospace;
+                font-size: 16px;
+                color: #060A24;
+                letter-spacing: 0;
+                line-height: 24px;
+                white-space: pre-line;
+            }
+        }
+        #text-desktop{
+            display: block;
+        }
+        #text-mobile{
+            display: none;
+        }
+        .learn-more {
+            padding: 1%;
+            width: 20%;
+        }
+        .point{
+            color : #0000EC;
+        }
+    }
+    #podcast {
+        height: 1042.6px;
+        .header__bg{
+            height: 85%;
+        }
+        #container-podcast{
+            #title{
+                margin: 3% 15%;
+                font-size: 48px;
+                color: #FFFFFF;
+                letter-spacing: 0;
+            }
+            #podcasts{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                iframe{
+                    width: 45% !important;
+                    margin-bottom: 5%;
+                    &:nth-child(odd){
+                        margin-right: 5%;
+                    }
+                }
+            }
+        }
+    }
+    #us{
+        display: grid;
+        grid-template-columns: 25% 35%;
+        justify-content: center;
+        grid-gap: 4%;
+        margin-top: -13%;
+        .img{
+            margin-left: 10%;
+        }
+        .history{
+            .title h2{
+                white-space: normal;
+                font-size: 48px;
+                color: #060A24;
+                letter-spacing: 0;
+            }
+        }
+    }
+    #guests {
+        .title{
+            margin: 3% 14% 2%;
+        }
+        img{
+            width: 33%;
+        }
+    }
+    #other-topics{
+        align-items: flex-start;
+        .title{
+            margin: 4% 14%;
+        }
+        .topics{
+            display: inline-flex;
+            justify-content: center;
+            .topic{
+                margin: 0 3%;
+                .title-topic{
+                    margin: 0;
+                    white-space: pre-line;
+                }
+            }
+        }
+    }
+
+    #newness{
+        height: 518px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+        .title{
+            font-size: 48px;
+            padding: 8% 14% 0;
+        }
+        .learn-more {
+            padding: 1%;
+            width: 20%;
+        }
+        .header__bg{
+            height: 125%;
+        }
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 70% 25%;
+        justify-content: unset;
+        align-items: center;
+        padding: 0;
+        height: 70px;
+        .title{
+            text-align: left;
+            margin-left: 7%;
+        }
+    }
+
+}
+/*
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+//CSS
+}

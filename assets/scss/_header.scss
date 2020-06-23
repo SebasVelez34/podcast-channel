@@ -21,11 +21,16 @@
     li a {
         display: block;
         padding: 20px 20px;
-        border-right: 1px solid #f4f4f4;
         text-decoration: none;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 28px;
     }
     li a:hover,.menu-btn:hover{
-        background-color: #f4f4f4;
+        background-color: #0000FF;
+        color: #fff;
     }
 
     .logo {
@@ -82,12 +87,12 @@
     }
 
     .menu-btn:checked ~ .menu {
-        max-height: 240px;
+        max-height: 265px;
     }
 
     .menu-btn:checked ~ .menu-icon .navicon {
         background: transparent;
-      }
+    }
 
     .menu-btn:checked ~ .menu-icon .navicon:before {
     transform: rotate(-45deg);
@@ -116,6 +121,7 @@
         clear: none;
         float: right;
         max-height: none;
+        margin-right: 6%;
     }
     .header .menu-icon {
         display: none;
