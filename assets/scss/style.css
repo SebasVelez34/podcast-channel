@@ -641,10 +641,22 @@ footer .icons i {
   margin: 0;
 }
 
+#container header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
 #container main {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: main;
+}
+
+#container footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
 }
 
 .learn-more {

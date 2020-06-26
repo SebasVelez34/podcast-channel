@@ -11,8 +11,16 @@
     margin: 0;
 }
 
+#container header{
+    grid-area: header;
+}
+
 #container main{
     grid-area: main;
+}
+
+#container footer{
+    grid-area: footer;
 }
 
 .learn-more {
@@ -32,7 +40,3 @@
     font-weight: 500;
 }
 
-
-
-
-  
